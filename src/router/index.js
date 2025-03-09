@@ -1,19 +1,12 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Style from '@/views/StyleView.vue'
 import Home from '@/views/HomeView.vue'
 
 const routes = [
   {
-    meta: {
-      title: 'Select style',
-    },
     path: '/',
-    name: 'style',
-    component: Style,
+    redirect: '/dashboard'
   },
   {
-    // Document title tag
-    // We combine it with defaultDocumentTitle set in `src/main.js` on router.afterEach hook
     meta: {
       title: 'Dashboard',
     },
